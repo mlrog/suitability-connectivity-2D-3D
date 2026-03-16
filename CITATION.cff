@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: suitability-connectivity-2D-3D
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - family-names: Rogers
+    given-names: Morgan L.
+  - family-names: Frazier
+    given-names: Amy E.
+  - family-names: Zellmer
+    given-names: Amanda J.
+  - family-names: Lerman
+    given-names: Susannah B.
+repository-code: https://github.com/mlrog/suitability-connectivity-2D-3D
+license: MIT
+version: 1.0.0
+date-released: 2025
+abstract: "Code and data associated with: Sensitivity of Habitat
+  Suitability-Derived Connectivity Models to Three-Dimensional
+  Measures of Urban Landscape Structure. Urban Ecosystems."
