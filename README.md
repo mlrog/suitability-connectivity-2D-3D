@@ -14,14 +14,14 @@
 
 ## Overview
 
-Ecological connectivity models commonly derive resistance surfaces from 
-habitat suitability; however, it remains unclear how two-dimensional (2D) 
-versus three-dimensional (3D) representations of landscape propagate through 
-this modeling pipeline, particularly in urban environments. This study 
-evaluated the sensitivity of habitat suitability and connectivity outputs 
-derived from these models to the inclusion of 3D landscape structure for two 
-bird species with contrasting habitat associations, the Western Bluebird 
-(*Sialia mexicana*) and Acorn Woodpecker (*Melanerpes formicivorus*), in Los 
+Ecological connectivity models commonly derive resistance surfaces from
+habitat suitability; however, it remains unclear how two-dimensional (2D)
+versus three-dimensional (3D) representations of landscape propagate through
+this modeling pipeline, particularly in urban environments. This study
+evaluated the sensitivity of habitat suitability and connectivity outputs
+derived from these models to the inclusion of 3D landscape structure for two
+bird species with contrasting habitat associations, the Western Bluebird
+(*Sialia mexicana*) and Acorn Woodpecker (*Melanerpes formicivorus*), in Los
 Angeles, California, USA.
 
 ---
@@ -38,6 +38,9 @@ suitability-connectivity-2D-3D/
 │   │   ├── 04_nlcd_water_prop.js
 │   │   ├── 05_nlcd_impervious_prop.js
 │   │   └── 06_ndvi_annual_mean_100m.js
+│   │
+│   ├── julia/                        # Omniscape configuration
+│   │   └── omniscape_config.ini
 │   │
 │   └── R/                            # R scripts
 │       ├── 07_building_metrics.R
@@ -87,11 +90,16 @@ resolution from locally held datasets.
 |--------|-------------|
 | `11_resistance_transformation.R` | Converts MaxEnt cloglog habitat suitability outputs to resistance surfaces for Omniscape connectivity modeling |
 
+### Julia — Connectivity Modeling
+| Script | Description |
+|--------|-------------|
+| `omniscape_config.ini` | Omniscape configuration file template for connectivity modeling. Run once per species and model type (2D bluebird, 3D bluebird, 2D woodpecker, 3D woodpecker) by placing in the same folder as the corresponding resistance and source rasters and updating the `project_name` field |
+
 ### R Scripts — Analysis
 | Script | Description |
 |--------|-------------|
 | `12_hellinger_niche_similarity.R` | Computes Hellinger-based niche similarity index (I) between 2D and 3D MaxEnt outputs for each species |
-| `13_spearman_correlation.R` | Computes Spearman rank correlation between 2D and 3D MaxEnt suitability outputs |
+| `13_spearman_correlation.R` | Computes Spearman rank correlation between 2D and 3D MaxEnt suitability outputs and generates percentile rank difference maps |
 | `14_connectivity_comparison.R` | Computes Pearson correlation between 2D and 3D Omniscape outputs and generates top 10% current flow difference maps |
 
 ---
@@ -106,6 +114,16 @@ resolution from locally held datasets.
 - `purrr` v1.1.0
 - `tidyr` v1.3.1
 - `data.table` v1.17.8
+
+### Julia
+- Julia v1.12.4
+- Omniscape.jl v0.6.2
+
+To install Omniscape.jl in Julia:
+```julia
+using Pkg
+Pkg.add("Omniscape")
+```
 
 ### Google Earth Engine
 Scripts 01–06 require a Google Earth Engine account. Access is free for
@@ -166,7 +184,7 @@ MaxEnt habitat suitability modeling (via Banta Lab scripts)
         ↓
 R Script (11): Resistance transformation
         ↓
-Omniscape connectivity modeling (Julia)
+Omniscape connectivity modeling — Julia (omniscape_config.ini)
         ↓
 R Scripts (12–14): Analysis and comparison
 ```
@@ -194,4 +212,4 @@ paper and the repository:
 ## License
 
 - **Code:** MIT License — see [LICENSE](LICENSE)
-- **Code:** CC BY 4.0 — see [LICENSE-DATA](LICENSE-DATA)
+- **Data:** CC BY 4.0 — see [LICENSE-DATA](LICENSE-DATA)
