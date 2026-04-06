@@ -73,8 +73,7 @@ occurrence records used for MaxEnt habitat suitability modeling.
 - Format: Arc/Info ASCII Grid (.asc)
 - Resolution: ~100 m (0.000964°)
 - Extent: City of Los Angeles, CA
-- CRS: WGS 84 (EPSG:4326) — note that MaxEnt .asc outputs do
-  not embed CRS metadata; the coordinate extent confirms WGS 84
+- CRS: WGS 84 (EPSG:4326) 
 - Value range: 0 (least suitable) to 1 (most suitable)
 - Output type: cloglog (complementary log-log)
 
