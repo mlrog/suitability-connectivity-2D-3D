@@ -99,7 +99,7 @@ resolution from locally held datasets.
 | Script | Description |
 |--------|-------------|
 | `12_hellinger_niche_similarity.R` | Computes Hellinger-based niche similarity index (I) between 2D and 3D MaxEnt outputs for each species |
-| `13_spearman_correlation.R` | Computes Spearman rank correlation between 2D and 3D MaxEnt suitability outputs and generates percentile rank difference maps |
+| `13_spearman_correlation.R` | Computes Spearman rank correlation between 2D and 3D MaxEnt suitability outputs |
 | `14_connectivity_comparison.R` | Computes Pearson correlation between 2D and 3D Omniscape outputs and generates top 10% current flow difference maps |
 
 ---
