@@ -30,7 +30,12 @@
 #            - building_height_sd_100m.tif
 #            - building_volume_100m.tif
 #
-# Paper:   Rogers, M. L., Frazier, A. E., Zellmer, A. J., & Lerman, S. B. (2026). Sensitivity of habitat suitability-derived connectivity models to three-dimensional measures of urban landscape structure. Urban Ecosystems, 29(3), 121. https://doi.org/10.1007/s11252-026-01948-y
+# Paper:   Rogers, M. L., Frazier, A. E., Zellmer, A. J., & 
+#          Lerman, S. B. (2026). Sensitivity of habitat 
+#          suitability-derived connectivity models to 
+#          three-dimensional measures of urban landscape structure. 
+#          Urban Ecosystems, 29(3), 121. 
+#          https://doi.org/10.1007/s11252-026-01948-y
 
 # =============================================================
 
