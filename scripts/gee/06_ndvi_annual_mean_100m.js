@@ -24,7 +24,12 @@
 //       Code Editor (code.earthengine.google.com) and is not
 //       intended to be run as a standalone Node.js script.
 //
-// Paper:   [Full citation or "In review, Journal of Urban Ecosystems"]
+// Paper:   Rogers, M. L., Frazier, A. E., Zellmer, A. J., & 
+//          Lerman, S. B. (2026). Sensitivity of habitat 
+//          suitability-derived connectivity models to 
+//          three-dimensional measures of urban landscape structure. 
+//          Urban Ecosystems, 29(3), 121. 
+//          https://doi.org/10.1007/s11252-026-01948-y
 // =============================================================
 
 
