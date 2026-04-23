@@ -8,8 +8,6 @@
 
 **Paper DOI:** https://doi.org/10.1007/s11252-026-01948-y
 
-**Repository DOI:** [To be added upon Zenodo release]
-
 ---
 
 ## Overview
