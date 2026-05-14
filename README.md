@@ -4,10 +4,13 @@
 
 **Authors:** Morgan L. Rogers, Amy E. Frazier, Amanda J. Zellmer, Susannah B. Lerman
 
-**Journal:** Urban Ecosystems (accepted)
+**Journal:** Urban Ecosystems
+
+**Year:** 2026
 
 **Paper DOI:** https://doi.org/10.1007/s11252-026-01948-y
 
+**Repository DOI:** https://doi.org/10.5281/zenodo.20191256
 ---
 
 ## Overview
